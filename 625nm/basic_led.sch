@@ -154,5 +154,5 @@ F 3 "~" H 4325 2125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3825 1000 0    50   ~ 0
-625nm LED (Vf=2V, I=16mA)
+630nm LED (Vf=2V, I=16mA)
 $EndSCHEMATC
