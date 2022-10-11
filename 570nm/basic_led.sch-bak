@@ -1,0 +1,158 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 617588B6
+P 1400 1400
+F 0 "J1" H 1480 1392 50  0000 L CNN
+F 1 "Conn_01x04" H 1480 1301 50  0000 L CNN
+F 2 "BOOMELE_SH_SMD:BOOMELE_SMD_SH_4PIN_RT" H 1400 1400 50  0001 C CNN
+F 3 "~" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 617591D1
+P 2825 1400
+F 0 "J2" H 2905 1392 50  0000 L CNN
+F 1 "Conn_01x04" H 2905 1301 50  0000 L CNN
+F 2 "BOOMELE_SH_SMD:BOOMELE_SMD_SH_4PIN_RT" H 2825 1400 50  0001 C CNN
+F 3 "~" H 2825 1400 50  0001 C CNN
+	1    2825 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1300 1825 1300
+Wire Wire Line
+	1600 1400 1825 1400
+Wire Wire Line
+	1600 1500 1825 1500
+Wire Wire Line
+	1600 1600 1825 1600
+Text Label 1825 1300 0    50   ~ 0
+GND
+Text Label 1825 1400 0    50   ~ 0
+3V3
+Text Label 1825 1500 0    50   ~ 0
+SDA
+Text Label 1825 1600 0    50   ~ 0
+SCL
+Wire Wire Line
+	2625 1300 2400 1300
+Wire Wire Line
+	2625 1400 2400 1400
+Wire Wire Line
+	2625 1500 2400 1500
+Wire Wire Line
+	2625 1600 2400 1600
+Text Label 2400 1300 2    50   ~ 0
+GND
+Text Label 2400 1400 2    50   ~ 0
+3V3
+Text Label 2400 1500 2    50   ~ 0
+SDA
+Text Label 2400 1600 2    50   ~ 0
+SCL
+Text Notes 1325 1100 0    50   ~ 0
+Stemma QT / qwiic  connectors\nLCSC#  C145956
+$Comp
+L Device:LED_ALT D1
+U 1 1 617C0FF2
+P 4325 1650
+F 0 "D1" V 4364 1532 50  0000 R CNN
+F 1 "LED_ALT" V 4273 1532 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4325 1650 50  0001 C CNN
+F 3 "~" H 4325 1650 50  0001 C CNN
+	1    4325 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 617C9AE1
+P 4325 2400
+F 0 "#PWR08" H 4325 2150 50  0001 C CNN
+F 1 "GND" H 4330 2227 50  0000 C CNN
+F 2 "" H 4325 2400 50  0001 C CNN
+F 3 "" H 4325 2400 50  0001 C CNN
+	1    4325 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4325 2400 4325 2275
+Wire Wire Line
+	4325 1800 4325 1975
+Wire Wire Line
+	4325 1500 4325 1225
+Text Label 4325 1225 1    50   ~ 0
+3V3
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 618C7AAE
+P 6350 1325
+F 0 "#FLG0101" H 6350 1400 50  0001 C CNN
+F 1 "PWR_FLAG" H 6350 1498 50  0000 C CNN
+F 2 "" H 6350 1325 50  0001 C CNN
+F 3 "~" H 6350 1325 50  0001 C CNN
+	1    6350 1325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 618C935B
+P 5875 1325
+F 0 "#FLG0102" H 5875 1400 50  0001 C CNN
+F 1 "PWR_FLAG" H 5875 1498 50  0000 C CNN
+F 2 "" H 5875 1325 50  0001 C CNN
+F 3 "~" H 5875 1325 50  0001 C CNN
+	1    5875 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 1325 5875 1600
+Wire Wire Line
+	5875 1600 5500 1600
+Wire Wire Line
+	5500 1600 5500 1325
+Text Label 5500 1325 1    50   ~ 0
+3V3
+Wire Wire Line
+	6350 1325 6350 1600
+$Comp
+L power:GND #PWR0101
+U 1 1 618D2424
+P 6350 1600
+F 0 "#PWR0101" H 6350 1350 50  0001 C CNN
+F 1 "GND" H 6355 1427 50  0000 C CNN
+F 2 "" H 6350 1600 50  0001 C CNN
+F 3 "" H 6350 1600 50  0001 C CNN
+	1    6350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 617C7054
+P 4325 2125
+F 0 "R1" H 4395 2171 50  0000 L CNN
+F 1 "13" H 4395 2080 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4255 2125 50  0001 C CNN
+F 3 "~" H 4325 2125 50  0001 C CNN
+	1    4325 2125
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 1025 0    50   ~ 0
+LED 470nm, Vf=3.1V,  I=15mA
+$EndSCHEMATC
