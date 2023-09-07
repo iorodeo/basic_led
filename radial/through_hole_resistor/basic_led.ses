@@ -1,0 +1,187 @@
+
+(session basic_led.ses
+  (base_design basic_led.dsn)
+  (placement
+    (resolution um 10)
+    (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal
+      (place R1 588900 -545000 back 180)
+    )
+    (component custom_mount_hole:MountingHole_2.5mm_Pad
+      (place M1 525400 -525400 front 0)
+      (place M2 728600 -525400 front 0)
+      (place M3 728600 -674600 front 0)
+      (place M4 525400 -674600 front 0)
+    )
+    (component LED_THT:LED_D3.0mm
+      (place D1 627000 -587300 front 270)
+    )
+    (component BOOMELE_SH_SMD:BOOMELE_SMD_SH_4PIN_RT
+      (place J1 527800 -600000 front 90)
+      (place J2 726200 -600000 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "7.0.2-6a45011f42~172~ubuntu22.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2500
+            707750 -615000
+            693747 -615000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            665100 -556251
+            693747 -584898
+            693747 -615000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            665100 -545000
+            665100 -556251
+          )
+        )
+        (via "Via[0-1]_800:400_um" 693747 -615000
+        )
+        (wire
+          (path F.Cu 2500
+            653849 -545000
+            646266 -545000
+            606266 -585000
+            557501 -585000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            665100 -545000
+            653849 -545000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            546250 -585000
+            557501 -585000
+          )
+        )
+      )
+      (net /3V3
+        (wire
+          (path F.Cu 2500
+            557501 -595000
+            559377 -593124
+            607424 -593124
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            627000 -612700
+            607424 -593124
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            546250 -595000
+            557501 -595000
+          )
+        )
+        (via "Via[0-1]_800:400_um" 607424 -593124
+        )
+        (wire
+          (path F.Cu 2500
+            627000 -612700
+            634700 -605000
+            707750 -605000
+          )
+        )
+      )
+      (net /SCL
+        (wire
+          (path F.Cu 2500
+            546250 -615000
+            607277 -615000
+            622725 -599552
+            648530 -599552
+            663082 -585000
+            707750 -585000
+          )
+        )
+      )
+      (net /SDA
+        (wire
+          (path F.Cu 2500
+            707750 -595000
+            670854 -595000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            589452 -606874
+            607530 -624952
+            640902 -624952
+            670854 -595000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            546250 -605000
+            557501 -605000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            589452 -606874
+            559375 -606874
+            557501 -605000
+          )
+        )
+        (via "Via[0-1]_800:400_um" 589452 -606874
+        )
+        (via "Via[0-1]_800:400_um" 670854 -595000
+        )
+      )
+      (net "Net-(D1-K)"
+        (wire
+          (path B.Cu 2500
+            627000 -587300
+            627000 -575049
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            627000 -575049
+            618949 -575049
+            588900 -545000
+          )
+        )
+      )
+    )
+  )
+)

@@ -1,0 +1,202 @@
+
+(session basic_led.ses
+  (base_design basic_led.dsn)
+  (placement
+    (resolution um 10)
+    (component LED_THT:LED_D3.0mm
+      (place D1 627000 -587300 front 270)
+    )
+    (component custom_mount_hole:MountingHole_2.5mm_Pad
+      (place M1 525400 -525400 front 0)
+      (place M2 728600 -525400 front 0)
+      (place M3 728600 -674600 front 0)
+      (place M4 525400 -674600 front 0)
+    )
+    (component BOOMELE_SH_SMD:BOOMELE_SMD_SH_4PIN_RT
+      (place J1 527800 -600000 front 90)
+      (place J2 726200 -600000 front 270)
+    )
+    (component Resistor_SMD:R_0603_1608Metric
+      (place R1 627000 -540000 front 180)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "7.0.2-6a45011f42~172~ubuntu22.04.1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2500
+            589709 -573024
+            616237 -599552
+            639324 -599552
+            655455 -615683
+            695816 -615683
+            696499 -615000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            618750 -540000
+            589709 -569041
+            589709 -573024
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            589709 -573024
+            569477 -573024
+            557501 -585000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            707750 -615000
+            696499 -615000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            546250 -585000
+            557501 -585000
+          )
+        )
+      )
+      (net /3V3
+        (wire
+          (path F.Cu 2500
+            546250 -595000
+            557501 -595000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            627000 -612700
+            614771 -612700
+            594322 -592251
+            560250 -592251
+            557501 -595000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            684920 -608028
+            631672 -608028
+            627000 -612700
+          )
+        )
+        (via "Via[0-1]_800:400_um" 684920 -608028
+        )
+        (wire
+          (path F.Cu 2500
+            707750 -605000
+            687948 -605000
+            684920 -608028
+          )
+        )
+      )
+      (net /SCL
+        (wire
+          (path F.Cu 2500
+            584936 -599620
+            569556 -615000
+            546250 -615000
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            663574 -578666
+            659956 -575048
+            609508 -575048
+            584936 -599620
+          )
+        )
+        (via "Via[0-1]_800:400_um" 584936 -599620
+        )
+        (via "Via[0-1]_800:400_um" 663574 -578666
+        )
+        (wire
+          (path F.Cu 2500
+            707750 -585000
+            669908 -585000
+            663574 -578666
+          )
+        )
+      )
+      (net /SDA
+        (wire
+          (path F.Cu 2500
+            557501 -605000
+            559375 -606874
+            567082 -606874
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            567082 -606874
+            587936 -606874
+            595258 -599552
+            664989 -599552
+            669541 -595000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            707750 -595000
+            669541 -595000
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            546250 -605000
+            557501 -605000
+          )
+        )
+        (via "Via[0-1]_800:400_um" 567082 -606874
+        )
+        (via "Via[0-1]_800:400_um" 669541 -595000
+        )
+      )
+      (net "Net-(D1-K)"
+        (wire
+          (path F.Cu 2500
+            627000 -587300
+            627000 -575049
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            635250 -540000
+            635250 -566799
+            627000 -575049
+          )
+        )
+      )
+    )
+  )
+)
