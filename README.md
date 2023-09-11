@@ -1,4 +1,4 @@
-# IO Rodeo basix_led 
+# IO Rodeo basic_led 
 
 Hardware files for IO Rodeo's basic_led designed to be used with our
 [cuvette holder](https://github.com/iorodeo/cuvette_holder).
